@@ -4,7 +4,7 @@ filetype plugin indent on
 set nocompatible
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set history=500		" keep 500 lines of command line history
-set ruler		" show the cursor position all the time
+set ruler
 set showcmd		" display incomplete commands
 set autoindent
 set nowrap
