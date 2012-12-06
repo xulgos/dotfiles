@@ -14,14 +14,12 @@ set laststatus=2  " Always show status line.
 set number 
 set nofoldenable
 
-" Highlight the status line
-highlight StatusLine ctermfg=blue ctermbg=yellow
-
 set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+set t_Co=256
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
-
