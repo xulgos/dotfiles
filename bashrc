@@ -98,4 +98,4 @@ unset safe_term match_lhs
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ###Aliases###
-alias screen="screen -T xterm"
+alias screen="screen -a -U -T linux"

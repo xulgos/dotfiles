@@ -1,0 +1,22 @@
+split -v
+split -v
+split
+
+screen
+focus
+screen
+
+focus
+screen
+
+focus
+screen
+
+focus
+focus
+focus
+
+bind h focus left
+bind j focus down
+bind k focus up
+bind l focus right
