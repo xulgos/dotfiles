@@ -96,3 +96,6 @@ unset safe_term match_lhs
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+###Aliases###
+alias screen="screen -T xterm"
