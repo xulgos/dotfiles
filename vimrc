@@ -13,6 +13,7 @@ set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
 set laststatus=2  " Always show status line.
 set number 
 set nofoldenable
+set hidden
 
 set expandtab
 set tabstop=2
@@ -23,3 +24,6 @@ set t_Co=256
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+
+nnoremap <silent> [b :bprevious<CR> 
+nnoremap <silent> ]b :bnext<CR>
