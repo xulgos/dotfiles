@@ -22,7 +22,6 @@ set shiftwidth=2
 
 set t_Co=256
 set background=dark
-let g:solarized_termcolors=256
 colorscheme solarized
 
 nnoremap <silent> [b :bprevious<CR> 
