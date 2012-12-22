@@ -99,3 +99,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ###Aliases###
 alias screen="screen -a -U -T linux"
+alias vim="gnome-terminal --window-with-profile=Solarized -x vim"
