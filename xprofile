@@ -1,7 +1,0 @@
-echo BeforeIf >> ~/xmodmapLoadLog
-if [ -f $HOME/.Xmodmap ]; then
-    echo BeforeDone >> ~/xmodmapLoadLog
-    /usr/bin/xmodmap $HOME/.Xmodmap
-    echo Done >> ~/xmodmapLoadLog
-fi
-echo AfterIf >> ~/xmodmapLoadLog
