@@ -14,11 +14,7 @@ set laststatus=2  " Always show status line.
 set number 
 set nofoldenable
 set hidden
-
 set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
 
 set t_Co=256
 set background=dark
@@ -26,8 +22,11 @@ colorscheme solarized
 
 let mapleader = ","
 noremap <leader>o o<esc>
+nmap <leader>n /def<CR>
+
 nnoremap <silent> [b :bprevious<CR> 
 nnoremap <silent> ]b :bnext<CR>
+
 noremap <up> <nop>
 noremap <down> <nop>
 noremap <left> <nop>
