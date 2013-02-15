@@ -26,3 +26,11 @@ colorscheme solarized
 
 nnoremap <silent> [b :bprevious<CR> 
 nnoremap <silent> ]b :bnext<CR>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+inoremap <up> <nop>
