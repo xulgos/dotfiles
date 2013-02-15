@@ -24,6 +24,8 @@ set t_Co=256
 set background=dark
 colorscheme solarized
 
+let mapleader = ","
+noremap <leader>o o<esc>
 nnoremap <silent> [b :bprevious<CR> 
 nnoremap <silent> ]b :bnext<CR>
 noremap <up> <nop>
