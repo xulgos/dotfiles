@@ -1,3 +1,7 @@
+"call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+runtime macros/matchit.vim
 syntax on
 filetype plugin indent on
 
@@ -21,8 +25,9 @@ set background=dark
 colorscheme solarized
 
 let mapleader = ","
-noremap <leader>o o<esc>
-nmap <leader>n /def<CR>
+nnoremap <leader>o o<esc>
+vnoremap im :<C-U>/def<CR>jv/^\s\{2,2}end/<CR>l
+omap im :normal vim<CR>?def<CR>$
 
 nnoremap <silent> [b :bprevious<CR> 
 nnoremap <silent> ]b :bnext<CR>
