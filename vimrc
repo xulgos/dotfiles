@@ -1,9 +1,8 @@
-"call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-runtime macros/matchit.vim
+execute pathogen#infect()
+execute pathogen#helptags()
 syntax on
 filetype plugin indent on
+runtime macros/matchit.vim
 
 set nocompatible
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
