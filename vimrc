@@ -1,9 +1,19 @@
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 execute pathogen#infect()
 execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 runtime macros/matchit.vim
+if ! has('gui_running')
+    set ttimeoutlen=10
+    augroup FastEscape
+        autocmd!
+        au InsertEnter * set timeoutlen=0
+        au InsertLeave * set timeoutlen=1000
+    augroup END
+endif
 
+set noshowmode
 set nocompatible
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set history=500		" keep 500 lines of command line history
@@ -25,8 +35,12 @@ colorscheme solarized
 
 let mapleader = ","
 nnoremap <leader>o o<esc>
-vnoremap im :<C-U>/def<CR>jv/^\s\{2,2}end/<CR>l
-omap im :normal vim<CR>?def<CR>$
+nnoremap <leader>l <c-w>l
+nnoremap <leader>h <c-w>h
+nnoremap <leader>k <c-w>k
+nnoremap <leader>j <c-w>j
+nnoremap <leader>> <c-w>>
+nnoremap <leader>< <c-w><
 
 nnoremap <silent> [b :bprevious<CR> 
 nnoremap <silent> ]b :bnext<CR>
