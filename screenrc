@@ -9,5 +9,6 @@ bind k focus up
 bind l focus right
 
 focus
+screen jruby --ng-server
 focus
 screen
