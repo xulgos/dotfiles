@@ -41,6 +41,7 @@ nnoremap <leader>k <c-w>k
 nnoremap <leader>j <c-w>j
 nnoremap <leader>> <c-w>>
 nnoremap <leader>< <c-w><
+nnoremap <leader>r <c-r>
 
 nnoremap <silent> [b :bprevious<CR> 
 nnoremap <silent> ]b :bnext<CR>
