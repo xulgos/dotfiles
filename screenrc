@@ -1,14 +1,16 @@
-screen autotest
+screen autotest -h 10000
 split -v
 resize -h 60
 split
+resize -v 46
+focus
+screen jruby --ng-server
+focus
+screen
 
 bind h focus left
 bind j focus down
 bind k focus up
 bind l focus right
-
-focus
-screen jruby --ng-server
-focus
-screen
+# C-a [, starts scroll mode, ESC to exit
+# spacebar to start copy mode and spacebar again ends copy mode
