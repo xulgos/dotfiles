@@ -1,4 +1,4 @@
-screen autotest -h 10000
+screen -h 10000 autotest 
 split -v
 resize -h 60
 split
