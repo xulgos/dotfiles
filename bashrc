@@ -76,15 +76,11 @@ man() {
 
 jscreen() {
   jruby --ng-server >/dev/null &
-  pro[0]=$!
-  ~/.eclipse/eclimd >/dev/null &
-  pro[1]=$!
+  jrubyp=$!
+  eclimd
   /usr/bin/screen
-  for id in "${pro[@]}"
-  do
-    kill -s 1 $id
-  done
-  kill -s 1 `ps | grep -oP "^[0-9]*(?=.+?java)"`
+  kill -s 1 $jrubyp
+  vim -c "ShutdownEclim | q!"
 }
 
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
@@ -94,3 +90,4 @@ jscreen() {
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 EDITOR=vim
 set -o vi
+alias eclimd="~/.eclipse/eclimd >/dev/null &"
