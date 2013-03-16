@@ -1,10 +1,6 @@
 screen -h 10000 autotest 
 split -v
 resize -h 60
-split
-resize -v 46
-focus
-screen jruby --ng-server
 focus
 screen
 

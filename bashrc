@@ -74,6 +74,19 @@ man() {
 			man "$@"
 }
 
+jscreen() {
+  jruby --ng-server >/dev/null &
+  pro[0]=$!
+  ~/.eclipse/eclimd >/dev/null &
+  pro[1]=$!
+  /usr/bin/screen
+  for id in "${pro[@]}"
+  do
+    kill -s 1 $id
+  done
+  kill -s 1 `ps | grep -oP "^[0-9]*(?=.+?java)"`
+}
+
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash

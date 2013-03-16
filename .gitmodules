@@ -18,11 +18,11 @@
 	path = vim/bundle/powerline
 	url = https://github.com/Lokaltog/powerline
   ignore = dirty
-[submodule "vim/bundle/YouCompleteMe"]
-	path = vim/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-  ignore = dirty
 [submodule "vim/bundle/ruby"]
 	path = vim/bundle/ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
+  ignore = dirty
+[submodule "eclim"]
+	path = eclim
+	url = https://github.com/ervandew/eclim.git
   ignore = dirty

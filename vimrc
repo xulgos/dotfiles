@@ -1,6 +1,5 @@
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 execute pathogen#infect()
-execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 runtime macros/matchit.vim
