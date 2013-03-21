@@ -26,3 +26,6 @@
 	path = eclim
 	url = https://github.com/ervandew/eclim.git
   ignore = dirty
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git

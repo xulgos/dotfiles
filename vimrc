@@ -1,5 +1,6 @@
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 execute pathogen#infect()
+let g:SuperTabDefaultCompletionType = "context"
 syntax on
 filetype plugin indent on
 runtime macros/matchit.vim
