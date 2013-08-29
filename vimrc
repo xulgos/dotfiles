@@ -33,18 +33,10 @@ set t_Co=256
 set background=dark
 colorscheme solarized
 
-let mapleader = ","
-nnoremap <leader>o o<esc>
-nnoremap <leader>l <c-w>l
-nnoremap <leader>h <c-w>h
-nnoremap <leader>k <c-w>k
-nnoremap <leader>j <c-w>j
-nnoremap <leader>> <c-w>>
-nnoremap <leader>< <c-w><
-nnoremap <leader>r <c-r>
-
+let mapleader = '\'
 nnoremap <silent> [b :bprevious<CR> 
 nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> <leader>d :bdelete<CR>
 
 noremap <up> <nop>
 noremap <down> <nop>
