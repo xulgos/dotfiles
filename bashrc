@@ -62,7 +62,6 @@ man() {
 			man "$@"
 }
 
-
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
@@ -72,6 +71,10 @@ EDITOR=vim
 set -o vi
 alias eclimd="~/.eclipse/eclimd >/dev/null &"
 alias eclim-shutdown="~/.eclipse/eclim -command shutdown"
+alias play_wow="env WINEPREFIX=~/.WoW wine ~/.WoW/drive_c/Program\ Files\ \(x86\)/World\ of\ Warcraft/Wow-64.exe -opengl"
+alias roseta="env WINEPREFIX=~/.roseta wine ~/.roseta/setup345.exe"
+alias cproseta="cp ~/.roseta/RosettaStoneVersion3.exe ~/.roseta/drive_c/Program\ Files\ \(x86\)/Rosetta\ Stone/Rosetta\ Stone\ Version\ 3/"
+alias 閉じる="exit"
 
 jscreen() {
   jruby --ng-server >/dev/null &
@@ -81,3 +84,5 @@ jscreen() {
   kill -s 1 $jrubyp
   eclim-shutdown
 }
+export WINEDEBUG=-all
+export __GL_THREADED_OPTIMIZATIONS=1
