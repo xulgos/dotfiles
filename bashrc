@@ -67,14 +67,17 @@ man() {
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/bin
 EDITOR=vim
 set -o vi
 alias eclimd="~/.eclipse/eclimd >/dev/null &"
 alias eclim-shutdown="~/.eclipse/eclim -command shutdown"
-alias play_wow="env WINEPREFIX=~/.WoW wine ~/.WoW/drive_c/Program\ Files\ \(x86\)/World\ of\ Warcraft/Wow-64.exe -opengl"
 alias roseta="env WINEPREFIX=~/.roseta wine ~/.roseta/setup345.exe"
 alias cproseta="cp ~/.roseta/RosettaStoneVersion3.exe ~/.roseta/drive_c/Program\ Files\ \(x86\)/Rosetta\ Stone/Rosetta\ Stone\ Version\ 3/"
 alias 閉じる="exit"
+alias trc="transmission-remote-cli"
+alias trq="transmission-remote --exit"
+alias trd="transmission-daemon"
 
 jscreen() {
   jruby --ng-server >/dev/null &
