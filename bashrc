@@ -67,11 +67,9 @@ man() {
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/node_modules/.bin
 EDITOR=vim
 set -o vi
-alias eclimd="~/.eclipse/eclimd >/dev/null &"
-alias eclim-shutdown="~/.eclipse/eclim -command shutdown"
 alias roseta="env WINEPREFIX=~/.roseta wine ~/.roseta/setup345.exe"
 alias cproseta="cp ~/.roseta/RosettaStoneVersion3.exe ~/.roseta/drive_c/Program\ Files\ \(x86\)/Rosetta\ Stone/Rosetta\ Stone\ Version\ 3/"
 alias 閉じる="exit"
@@ -79,13 +77,5 @@ alias trc="transmission-remote-cli"
 alias trq="transmission-remote --exit"
 alias trd="transmission-daemon"
 
-jscreen() {
-  jruby --ng-server >/dev/null &
-  jrubyp=$!
-  eclimd
-  /usr/bin/screen
-  kill -s 1 $jrubyp
-  eclim-shutdown
-}
 export WINEDEBUG=-all
 export __GL_THREADED_OPTIMIZATIONS=1
