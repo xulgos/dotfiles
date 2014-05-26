@@ -68,6 +68,7 @@ man() {
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/node_modules/.bin:$HOME/bin
+PATH=$PATH:$HOME/edufile_utils
 EDITOR=vim
 set -o vi
 alias localpsql="psql -U edusystem -d edusystem -h localhost"
