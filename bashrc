@@ -72,3 +72,4 @@ PATH=$PATH:$HOME/edufile_utils
 EDITOR=vim
 set -o vi
 alias localpsql="psql -U edusystem -d edusystem -h localhost"
+stty -ixon
