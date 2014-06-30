@@ -16,9 +16,6 @@
 [submodule "vim/bundle/ruby"]
 	path = vim/bundle/ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
-[submodule "eclim"]
-	path = eclim
-	url = https://github.com/ervandew/eclim.git
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
