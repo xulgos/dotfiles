@@ -73,3 +73,4 @@ EDITOR=vim
 set -o vi
 alias localpsql="psql -U edusystem -d edusystem -h localhost"
 stty -ixon
+. ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
