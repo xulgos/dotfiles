@@ -42,6 +42,11 @@ nnoremap <leader>d :bdelete<CR>
 nnoremap <leader>u <C-r>
 nnoremap <leader>h :bprevious<CR>
 nnoremap <leader>l :bnext<CR>
+nnoremap <leader>ts :TagbarToggle<CR>
+nnoremap <leader>tf :ta
+nnoremap <leader>tl :tn<CR>
+nnoremap <leader>th :tp<CR>
+nnoremap <leader>td <c-]>
 
 noremap <up> <nop>
 noremap <down> <nop>
