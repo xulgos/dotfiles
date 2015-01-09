@@ -48,7 +48,7 @@ man() {
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/node_modules/.bin:$HOME/bin
+PATH=$PATH:$HOME/bin/nodejs/bin/:$HOME/bin
 PATH=$PATH:$HOME/edufile_utils
 EDITOR=vim
 set -o vi
