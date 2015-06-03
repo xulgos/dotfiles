@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-ln -s vim ~/.vim 
-ln -s fontconfig ~/.fontconfig 
-ln -s tmux.conf ~/.tmux.conf
-ln -s vimrc ~/.vimrc
-ln -s fonts ~/.fonts
-ln -s bashrc ~/.bashrc
+ln -sfr vim $HOME/.vim
+ln -sfr fontconfig $HOME/.config/fontconfig
+ln -sfr tmux.conf $HOME/.tmux.conf
+ln -sfr vimrc $HOME/.vimrc
+ln -sfr fonts $HOME/.fonts
+ln -sfr bashrc $HOME/.bashrc
+mkdir $HOME/.tmp
