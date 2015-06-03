@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
+git submodule update --recursive --init
 ln -sfr vim $HOME/.vim
 ln -sfr fontconfig $HOME/.config/fontconfig
 ln -sfr tmux.conf $HOME/.tmux.conf
 ln -sfr vimrc $HOME/.vimrc
 ln -sfr fonts $HOME/.fonts
 ln -sfr bashrc $HOME/.bashrc
+fc-cache -vf ~/.fonts
 mkdir $HOME/.tmp
