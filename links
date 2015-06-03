@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+ln -s vim ~/.vim 
+ln -s fontconfig ~/.fontconfig 
+ln -s tmux.conf ~/.tmux.conf
+ln -s vimrc ~/.vimrc
+ln -s fonts ~/.fonts
+ln -s bashrc ~/.bashrc
