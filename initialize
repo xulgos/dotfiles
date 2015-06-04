@@ -7,5 +7,6 @@ ln -sfr vimrc $HOME/.vimrc
 ln -sfr fonts $HOME/.fonts
 ln -sfr bashrc $HOME/.bashrc
 ln -sfr inputrc $HOME/.inputrc
+ln -sfr npmrc $HOME/.npmrc
 fc-cache -vf ~/.fonts
 mkdir $HOME/.tmp
