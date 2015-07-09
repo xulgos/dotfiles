@@ -28,6 +28,7 @@ set number
 set nofoldenable
 set hidden
 set expandtab
+set relativenumber
 
 set t_Co=256
 set background=dark
@@ -108,7 +109,7 @@ function! s:SeparateCommaDelimited(text)
 endfunction
 
 let mapleader = " "
-nnoremap <leader><leader> "+
+nnoremap <leader>p "+
 nnoremap <leader>d :bdelete<CR>
 nnoremap <leader>u <C-r>
 nnoremap <leader>h :bprevious<CR>
@@ -118,6 +119,8 @@ nnoremap <leader>tf :ta
 nnoremap <leader>tl :tn<CR>
 nnoremap <leader>th :tp<CR>
 nnoremap <leader>td <c-]>
+nnoremap <leader><leader> :b#<CR>
+
 call MapAction('Decamelize', '<leader>c')
 call MapAction('RemoveParentesis', '<leader>p')
 call MapAction('SeparateCommaDelimited', '<leader>s')
