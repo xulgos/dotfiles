@@ -52,6 +52,8 @@ PATH=$PATH:$HOME/bin/nodejs/bin/:$HOME/bin
 PATH=$PATH:$HOME/edufile_utils
 EDITOR=vim
 set -o vi
-alias localpsql="psql -U edusystem -d edusystem -h localhost"
+export PGDBNAME=edusystem
+export PGUSER=edusystem
+export PGHOST=localhost
 stty -ixon
 . ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
