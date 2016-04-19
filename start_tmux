@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+tmux has-session -t name &> /dev/null
+if [ $? != 0 ]; then
+  tmux new-session -s name -n editor -d -c "$1"
+  tmux split-window -c "$1" -t name -d
+  tmux split-window -c "$1" -t name -d
+  tmux select-layout -t name main-vertical > /dev/null
+  tmux resize-pane -t name:0.0 -x 120
+  git -C "$1" status &> /dev/null && \
+    hash gitsh &> /dev/null && \
+    tmux new-window -c "$1" -d && \
+    tmux send-keys -t name:1.0 "gitsh" C-m && \
+    tmux next-window -c "$1" -d
+fi
+tmux attach -t name -c "$1"
