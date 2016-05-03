@@ -28,3 +28,6 @@
 [submodule "vim/bundle/coffeetags"]
 	path = vim/bundle/coffeetags
 	url = https://github.com/lukaszkorecki/CoffeeTags.git
+[submodule "vim/bundle/ruby"]
+	path = vim/bundle/ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
