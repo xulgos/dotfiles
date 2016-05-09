@@ -49,11 +49,10 @@ man() {
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/bin/nodejs/bin/:$HOME/bin
-PATH=$PATH:$HOME/edufile_utils
 EDITOR=vim
 set -o vi
-export PGDBNAME=edusystem
-export PGUSER=edusystem
-export PGHOST=localhost
 stty -ixon
-. ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
