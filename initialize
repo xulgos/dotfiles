@@ -10,4 +10,5 @@ ln -sfr bashrc $HOME/.bashrc
 ln -sfr inputrc $HOME/.inputrc
 ln -sfr npmrc $HOME/.npmrc
 fc-cache -vf ~/.fonts
+pip install --user powerline-source
 mkdir $HOME/.tmp
