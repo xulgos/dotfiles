@@ -47,12 +47,17 @@ man() {
 
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/bin/nodejs/bin/:$HOME/bin:$HOME/.local/bin
+export ANDROID_HOME=$HOME/AndroidSDK
 EDITOR=vim
 set -o vi
 stty -ixon
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-. $(find -path *.local* -path *bash* -name powerline.sh)
+if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
+  . ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+else
+  . $(find -path *.local* -path *bash* -name powerline.sh)
+fi
+export ASPNETCORE_ENVIRONMENT="Development"
+source scl_source enable rh-dotnet20

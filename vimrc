@@ -29,6 +29,7 @@ set nofoldenable
 set hidden
 set expandtab
 set relativenumber
+set nohlsearch
 
 set t_Co=256
 set background=dark
