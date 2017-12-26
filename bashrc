@@ -47,13 +47,16 @@ man() {
 
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
 
-export ANDROID_HOME=$HOME/AndroidSDK
 EDITOR=vim
 set -o vi
 stty -ixon
-powerline-daemon -q
+export ANDROID_HOME=$HOME/AndroidSDK
+export PATH=$PATH:$HOME/.rvm/bin:$HOME/bin/nodejs/bin/:./node_modules/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$HOME/.local/bin:$HOME/bin:/opt/gradle/gradle-4.4/bin
+export POWERLINE_COMMAND=powerline
+export POWERLINE_CONFIG_COMMAND=powerline-config
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
+powerline-daemon -q
 if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
   . ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 else
